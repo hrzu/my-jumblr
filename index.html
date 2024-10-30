@@ -65,7 +65,7 @@ new Vue({
     initializeItems() {
       // Use window.location.href instead of pathname to handle local file URLs
       const url = window.location.href;
-      const params = url.split('+++').slice(1);
+      const params = url.split('????').slice(1);
       const combinedItems = params.map(param => decodeURIComponent(param.replace(/_/g, ' ')));
 
       const columns = 4;
